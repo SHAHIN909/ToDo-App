@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="#0C9E90"
+        android:id="@+id/st" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/femail"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fpass"
+            android:inputType="textPassword"
+            android:hint=" 6 - 8 character"
+            android:layout_margin="10dp"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:id="@+id/ckbRem1"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnlogin"
+            android:text="Login"
+            android:layout_margin="10dp"
+            android:backgroundTint="#0C9E90"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@drawable/g_icon"
+            android:id="@+id/btnlg"
+            android:backgroundTint="#0C9E90"
+            android:layout_margin="10dp"
+            android:text="Continue with Google "/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvlg"
+                android:text="Want to Create New Account ?"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@id/tvlg"
+                android:id="@+id/tvsg"
+                android:text="SignUp"
+                android:textSize="20sp"
+                android:textColor="#FF5722"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
